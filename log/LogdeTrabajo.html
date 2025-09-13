@@ -7,64 +7,120 @@
 	<title>Log de Trabajo</title>
 	<style>
 		body { font-family: Arial, sans-serif; margin: 30px; }
-		.log-entry { margin-bottom: 36px; }
-		.log-entry h2 { font-size: 1.1em; color: #2c3e50; margin-bottom: 8px; }
-		.log-entry img { max-width: 400px; border: 1px solid #aaa; display: block; margin-bottom: 8px; }
+		table { border-collapse: collapse; width: 100%; margin-bottom: 30px; }
+		th, td { border: 1px solid #888; padding: 8px 12px; text-align: left; vertical-align: top; }
+		th { background: #f0f0f0; }
+		img { max-width: 320px; border: 1px solid #aaa; }
+		code { background: #f4f4f4; padding: 2px 4px; border-radius: 3px; }
 	</style>
 </head>
 <body>
 	<h1>Log de Trabajo</h1>
-	<div class="log-entry">
-		<h2>CreacionMaquinaVirtual 12_24.jpg</h2>
-		<img src="../res/CreacionMaquinaVirtual 12_24.jpg" alt="CreacionMaquinaVirtual 12_24">
-	</div>
-	<div class="log-entry">
-		<h2>MaquinaCreada 12_25.jpg</h2>
-		<img src="../res/MaquinaCreada 12_25.jpg" alt="MaquinaCreada 12_25">
-	</div>
-	<div class="log-entry">
-		<h2>ConfigProtocoloTCPyPuerto80 12_26.jpg</h2>
-		<img src="../res/ConfigProtocoloTCPyPuerto80 12_26.jpg" alt="ConfigProtocoloTCPyPuerto80 12_26">
-	</div>
-	<div class="log-entry">
-		<h2>CreacionDelNmbredelaRegladeSeguridaddeEntrada_PruebaServidor 12_28.jpg</h2>
-		<img src="../res/CreacionDelNmbredelaRegladeSeguridaddeEntrada_PruebaServidor 12_28.jpg" alt="CreacionDelNmbredelaRegladeSeguridaddeEntrada_PruebaServidor 12_28">
-	</div>
-	<div class="log-entry">
-		<h2>DescdeDatosdeConfdeRed 12_30.jpg</h2>
-		<img src="../res/DescdeDatosdeConfdeRed 12_30.jpg" alt="DescdeDatosdeConfdeRed 12_30">
-	</div>
-	<div class="log-entry">
-		<h2>ComprobacionCorrectaConexionycomandoparaEjecutarSSH 12_31.jpg</h2>
-		<img src="../res/ComprobacionCorrectaConexionycomandoparaEjecutarSSH 12_31.jpg" alt="ComprobacionCorrectaConexionycomandoparaEjecutarSSH 12_31">
-	</div>
-	<div class="log-entry">
-		<h2>ErrorConexion 12_44.jpg</h2>
-		<img src="../res/ErrorConexion 12_44.jpg" alt="ErrorConexion 12_44">
-	</div>
-	<div class="log-entry">
-		<h2>ConexionExitosaalCambiardeRed 12_46.jpg</h2>
-		<img src="../res/ConexionExitosaalCambiardeRed 12_46.jpg" alt="ConexionExitosaalCambiardeRed 12_46">
-	</div>
-	<div class="log-entry">
-		<h2>ActualizacionSistema 12_47.jpg</h2>
-		<img src="../res/ActualizacionSistema 12_47.jpg" alt="ActualizacionSistema 12_47">
-	</div>
-	<div class="log-entry">
-		<h2>DesconexionConMaquinaVirtualPorTraficodeRed 12_50.jpg</h2>
-		<img src="../res/DesconexionConMaquinaVirtualPorTraficodeRed 12_50.jpg" alt="DesconexionConMaquinaVirtualPorTraficodeRed 12_50">
-	</div>
-	<div class="log-entry">
-		<h2>ReconexionalCambiardeRed 12_55.jpg</h2>
-		<img src="../res/ReconexionalCambiardeRed 12_55.jpg" alt="ReconexionalCambiardeRed 12_55">
-	</div>
-	<div class="log-entry">
-		<h2>InstalacionExitosaApache2 12_57.jpg</h2>
-		<img src="../res/InstalacionExitosaApache2 12_57.jpg" alt="InstalacionExitosaApache2 12_57">
-	</div>
-	<div class="log-entry">
-		<h2>EliminacionIndexDefaultdeApache2 13_00.jpg</h2>
-		<img src="../res/EliminacionIndexDefaultdeApache2 13_00.jpg" alt="EliminacionIndexDefaultdeApache2 13_00">
-	</div>
+	<table>
+		<tr>
+			<th>Hora</th>
+			<th>Acción realizada</th>
+			<th>Resultado / Error</th>
+			<th>Evidencia (captura)</th>
+		</tr>
+		<tr>
+			<td>12:24</td>
+			<td>Creación de la VM en Azure (B1s, Ubuntu)</td>
+			<td>VM creada correctamente</td>
+			<td><img src="../res/CreacionMaquinaVirtual 12_24.jpg" alt="CreacionMaquinaVirtual"></td>
+		</tr>
+		<tr>
+			<td>12:25</td>
+			<td>VM creada y visible en Azure</td>
+			<td>Confirmación visual de la VM</td>
+			<td><img src="../res/MaquinaCreada 12_25.jpg" alt="MaquinaCreada"></td>
+		</tr>
+		<tr>
+			<td>12:26</td>
+			<td>Configuración de protocolo TCP y puerto 80</td>
+			<td>Puerto 80 habilitado</td>
+			<td><img src="../res/ConfigProtocoloTCPyPuerto80 12_26.jpg" alt="ConfigProtocoloTCPyPuerto80"></td>
+		</tr>
+		<tr>
+			<td>12:28</td>
+			<td>Creación de regla de seguridad de entrada</td>
+			<td>Regla creada correctamente</td>
+			<td><img src="../res/CreacionDelNmbredelaRegladeSeguridaddeEntrada_PruebaServidor 12_28.jpg" alt="CreacionDelNmbredelaRegladeSeguridaddeEntrada_PruebaServidor"></td>
+		</tr>
+		<tr>
+			<td>12:30</td>
+			<td>Descarga de datos de configuración de red</td>
+			<td>Datos descargados</td>
+			<td><img src="../res/DescdeDatosdeConfdeRed 12_30.jpg" alt="DescdeDatosdeConfdeRed"></td>
+		</tr>
+		<tr>
+			<td>12:31</td>
+			<td>Comprobación de conexión y comando SSH</td>
+			<td>Conexión SSH exitosa</td>
+			<td><img src="../res/ComprobacionCorrectaConexionycomandoparaEjecutarSSH 12_31.jpg" alt="ComprobacionCorrectaConexionycomandoparaEjecutarSSH"></td>
+		</tr>
+		<tr>
+			<td>12:44</td>
+			<td>Error de conexión</td>
+			<td>Se detecta error de red</td>
+			<td><img src="../res/ErrorConexion 12_44.jpg" alt="ErrorConexion"></td>
+		</tr>
+		<tr>
+			<td>12:46</td>
+			<td>Reconexión al servidor</td>
+			<td>Conexión restablecida al cambiar la red</td>
+			<td><img src="../res/ConexionExitosaalCambiardeRed 12_46.jpg" alt="ConexionExitosaalCambiardeRed"></td>
+		</tr>
+		<tr>
+			<td>12:47</td>
+			<td>Actualización del sistema</td>
+			<td>Sistema actualizado usando comando <code>Sudo apt update</code> </td>
+			<td><img src="../res/ActualizacionSistema 12_47.jpg" alt="ActualizacionSistema"></td>
+		</tr>
+		<tr>
+			<td>12:50</td>
+			<td>Desconexión de la VM por tráfico de red</td>
+			<td>Desconexión detectada</td>
+			<td><img src="../res/DesconexionConMaquinaVirtualPorTraficodeRed 12_50.jpg" alt="DesconexionConMaquinaVirtualPorTraficodeRed"></td>
+		</tr>
+		<tr>
+			<td>12:55</td>
+			<td>Reconexión al cambiar de red</td>
+			<td>Reconexión exitosa al cambiar de red y reconectando usando comando <code>ssh -i C:\Users\josem\Downloads azureuser@20.220.25.170</code> </td>
+			<td><img src="../res/ReconexionalCambiardeRed 12_55.jpg" alt="ReconexionalCambiardeRed"></td>
+		</tr>
+		<tr>
+			<td>12:57</td>
+			<td>Instalación exitosa de Apache2</td>
+			<td>Servicio activo, comando usado <code>Sudo apt install apache2 -y</code> </td>
+			<td><img src="../res/InstalacionExitosaApache2 12_57.jpg" alt="InstalacionExitosaApache2"></td>
+		</tr>
+		<tr>
+			<td>13:00</td>
+			<td>Eliminación del index default de Apache2</td>
+			<td>Index eliminado comando <code>Sudo rm index.html</code></td>
+			<td><img src="../res/EliminacionIndexDefaultdeApache2 13_00.jpg" alt="EliminacionIndexDefaultdeApache2"></td>
+		</tr>
+		<tr>
+			<td>13:10</td>
+			<td>Clonación de repositorio</td>
+			<td>Archivos copiados en <code>/var/www/html</code> usando comando <code>Sudo git clone https://github.com/MagnusVenatus/13745.git</code> </td>
+			<td><img src="../res/ClonacionExitosadeRepositorio 13_10.jpg" alt="ClonacionExitosadeRepositorio"></td>
+		</tr>
+		<tr>
+			<td>13:13</td>
+			<td>Reinicio de servicio Apache2</td>
+			<td>Comando: <code>Sudo systemctl restart apache2</code></td>
+			<td><img src="../res/ReinicioDeServicioApache2 13_13.jpg" alt="ReinicioDeServicioApache2"></td>
+		</tr>
+		<tr>
+			<td>13:14</td>
+			<td>Ingreso exitoso a la página web por IP pública</td>
+			<td>Log y reporte accesibles vía navegador con ip: <code>20.220.25.170</code> </td>
+			<td><img src="../res/IngresoExitosoaPaginaWebPorIpPublica 13_14.jpg" alt="IngresoExitosoaPaginaWebPorIpPublica"></td>
+		</tr>
+	</table>
 </body>
 </html>
+
+
