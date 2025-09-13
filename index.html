@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Página de ejemplo</title>
+	<style>
+		body { font-family: Arial, sans-serif; margin: 30px; }
+		.imagenes { display: flex; gap: 20px; margin-bottom: 30px; }
+		.imagenes img { width: 200px; height: 150px; object-fit: cover; border: 1px solid #ccc; }
+		table { border-collapse: collapse; width: 60%; margin-bottom: 30px; }
+		th, td { border: 1px solid #888; padding: 8px 12px; text-align: left; }
+		th { background: #f0f0f0; }
+		.links a { display: block; margin-bottom: 8px; color: #0066cc; text-decoration: none; }
+		.links a:hover { text-decoration: underline; }
+	</style>
+</head>
+<body>
+	<h1>Página de ejemplo</h1>
+	<div class="imagenes">
+		<div style="text-align:center;">
+			<div>Avatar 1</div>
+			<img src="res/avatar1.jfif" alt="Avatar 1">
+		</div>
+		<div style="text-align:center;">
+			<div>Avatar 2</div>
+			<img src="res/avatar2.jfif" alt="Avatar 2">
+		</div>
+	</div>
+	<table>
+		<tr>
+			<th>Título</th>
+			<th>Descripción</th>
+		</tr>
+		<tr>
+			<td>Integrante Operador</td>
+			<td>José Méndez</td>
+		</tr>
+		<tr>
+			<td>Integrante Logger</td>
+			<td>Cristian Barrales</td>
+		</tr>
+        <tr>
+			<td>Que Aprendimos?</td>
+			<td>Aprendimos a como crear una maquina virtual con los servicios de Azure, como tambien saber configurar este, abrir el puerto necesario y poder
+                subir una pagina web a traves de el terminal de linux usado en ubuntu a travez de la ip publica que nos entrega azure y poder ver nuestra pagina web en el navegador. 
+            </td>
+		</tr>
+	</table>
+	<div class="links">
+		<a href="log/LogdeTrabajo.html" target="_blank">Ver Log de Trabajo</a>
+		<a href="log/ReporteFormal.html" target="_blank">Ver Reporte Formal</a>
+	</div>
+</body>
+</html>
